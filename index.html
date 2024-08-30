@@ -6,35 +6,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Literata" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet" type="text/css" />
     <style>
-        html {
-            font-family: "Raleway";
-            font-size: 13px;
-            font-weight: 500;
-        }
-        @media (max-width: 750px) {
-            #emptyday {
+        @media screen {
+            #emptyday .date {
                 visibility: collapse;
             }
             .calendar {
                 display: grid;
-                grid-template-columns: 0% repeat(4, 4fr) 0% 0%;
+                grid-template-columns: 1em repeat(4, 4fr) 1em 1em;
                 gap: 10px;
-                padding-left: 5px;
             }
             ul {
-                font-size: 120%;
+                font-size: 160%;
                 padding-left: 0;
             }
         }
-        @media (min-width: 750px) {
+        @media screen and (min-width: 62em) {
+            #emptyday .date {
+                visibility:visible;
+            }
             .calendar {
                 display: grid;
                 grid-template-columns: 4em repeat(4, 4fr) 4em 4em;
                 gap: 10px;
             }
             ul {
+                font-size: 100%;
                 padding-left: 2.5em;
             }
+        }
+        html {
+            font-family: "Raleway";
+            font-size: 13px;
+            font-weight: 500;
         }
         body {
             counter-reset: countdate 1;
