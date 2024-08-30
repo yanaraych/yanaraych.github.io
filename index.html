@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Расписание</title>
+    <link href="https://fonts.googleapis.com/css2?family=Literata" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet" type="text/css" />
+    <style>
+        html {
+            font-family: "Raleway";
+            font-size: 13px;
+            font-weight: 500;
+        }
+        @media (max-width: 750px) {
+            #emptyday {
+                visibility: collapse;
+            }
+            .calendar {
+                display: grid;
+                grid-template-columns: 0% repeat(4, 4fr) 0% 0%;
+                gap: 10px;
+                padding-left: 5px;
+            }
+            ul {
+                font-size: 120%;
+                padding-left: 0;
+            }
+        }
+        @media (min-width: 750px) {
+            .calendar {
+                display: grid;
+                grid-template-columns: 4em repeat(4, 4fr) 4em 4em;
+                gap: 10px;
+            }
+            ul {
+                padding-left: 2.5em;
+            }
+        }
+        body {
+            counter-reset: countdate 1;
+        }
+        .day {
+            background-color: #b6bfc2;
+            border-radius: 5px;
+        }
+        .date::before {            
+            counter-increment: countdate;
+            content: counter(countdate);
+        }
+        .date {
+            font: 800 2em "Literata";
+            background-color: #717686be;
+            border-radius: 3px;
+            padding: 1px;
+            padding-left: 5px;
+            margin: 5px;
+        }
+        ul {
+            list-style: none;
+            text-align: end;
+        }
+        li {
+            margin: 5px;
+            padding: 3px;
+            background-color: #dededecc;
+            border-radius: 5px;
+        }
+        #emptyday {
+            text-align: center;
+            opacity: 0.6;
+        }
+        .lk {
+            background-color:hsla(250, 30%, 87%, 0.8);
+        }
+        .pr {
+            background-color:hsla(180, 30%, 87%, 0.8);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="calendar">
+
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Технологии декоративного искусства</li>
+                <li class="lk">Основы ДПИ и народных промыслов</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Английский язык</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Культурные коды</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Рисунок</li>
+                <li class="pr">Рисунок</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="lk">Профессиональная коммуникация и сценическое мастерство</li>
+                <li class="pr">Проектирование и организация образования</li>
+                <li class="pr">Образовательное право</li>
+                <li class="pr">Самопрезентация и основы деятельности педагога</li>
+            </ul>
+        </div>
+        <div class="day" id="emptyday">
+            <div class="date"></div>
+        </div>
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+    
+    
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Технологии декоративного искусства</li>
+                <li class="lk">Основы ДПИ и народных промыслов</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Английский язык</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Живопись</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Рисунок</li>
+                <li class="pr">Рисунок</li>
+                <li class="lk">Методика обучения ИЗО</li>
+                <li class="lk">Методика обучения ИЗО</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Проектирование и организация образования</li>
+                <li class="pr">Образовательное право</li>
+                <li class="pr">Самопрезентация и основы деятельности педагога</li>
+            </ul>
+        </div>
+        <div class="day"id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        
+
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Технологии декоративного искусства</li>
+                <li class="lk">Основы ДПИ и народных промыслов</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Английский язык</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Культурные коды</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Рисунок</li>
+                <li class="pr">Рисунок</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Проектирование и организация образования</li>
+                <li class="pr">Образовательное право</li>
+                <li class="pr">Самопрезентация и основы деятельности педагога</li>
+            </ul>
+        </div>
+        <div class="day" id="emptyday">
+            <div class="date"></div>
+        </div>
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+
+
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Технологии декоративного искусства</li>
+                <li class="lk">Основы ДПИ и народных промыслов</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Английский язык</li>
+                <li class="pr">Живопись</li>
+                <li class="pr">Живопись</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="pr">Рисунок</li>
+                <li class="pr">Рисунок</li>
+                <li class="lk">Методика обучения ИЗО</li>
+                <li class="lk">Методика обучения ИЗО</li>
+            </ul>
+        </div>
+        <div class="day">
+            <div class="date"></div>
+            <ul>
+                <li class="empty">&nbsp;</li>
+                <li class="empty">&nbsp;</li>
+                <li class="pr">Проектирование и организация образования</li>
+                <li class="pr">Образовательное право</li>
+                <li class="pr">Самопрезентация и основы деятельности педагога</li>
+            </ul>
+        </div>
+        <div class="day"id="emptyday"> 
+            <div class="date"></div>
+        </div>
+        <div class="day" id="emptyday"> 
+            <div class="date"></div>
+        </div>
+    </div>
+</body>
+</html>
